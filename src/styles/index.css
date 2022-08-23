@@ -1,36 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway|Roboto');
-
+/* global values */
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-body {
-    background-color: #292929;
-    
+.button:hover {
+    transition: 0.2s ease-in-out;
+    border: 1.5px solid #b6a256;
+    background-color: #b6a256;
 }
-.greeting {
-    padding-top: 35vh;
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, #3f3f3f, #292929) ;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+}
+#footerlogo {
+    width: 15vw;
+    max-width: 100px;
+}
+
+/* mobile view */
+#landing {
+    background: url(../images/background1.jpg);
+    min-height: 100vh;
+    background-position: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#greeting {
+    padding-top: 31vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 0.2rem 0.2rem 0.7rem rgb(0, 0, 0) ;
 }
-/* header {
-    display: flex;
-    justify-content: center;
-}
-#logo {
-    height: 10vw;
-    min-height: 50px;
-    max-height: 7vh;
-    margin: 2rem 1rem 1rem 1rem; 
-} */
-
-img {
+#profilephoto {
     border: 2px solid white;
     border-radius: 50%;
     width: 32vw;
     max-width: 250px;
     background-color: black;
+}
+.highlight {
+    font-weight: 600;
+    color:#60a4f8;
+}
+#greeting div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#greeting h2 {
+    margin-top: 2rem;
+    color: rgb(210, 210, 210);
+    font-weight: 500;
+}
+#greeting p {
+    margin-top: 0.5rem;
+    color:rgb(210, 210, 210);
+    font-size: 1rem;
+}
+#greeting a {
+    text-decoration: none;
+    margin: 2rem;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid rgb(210, 210, 210);
+}
+#greeting a:link {
+    color:rgb(210, 210, 210);
+}
+#greeting a:visited {
+    color: rgb(210, 210, 210);
+}
+/* tablet view */
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    
+    
+}
+/* desktop view */
+@media screen and (min-width: 900px) {
+    #greeting {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 20%;
+    }
+    #greeting div {
+        margin-left: 2rem;
+    }
+
+    
 }
