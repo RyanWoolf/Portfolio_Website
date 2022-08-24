@@ -16,15 +16,21 @@
     justify-content: center;
     align-items: center;
 }
-.navbar {
-    display: block; 
+.header {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+.navbar {
+    display: block;
 }
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    max-width: 1280px;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 1.3rem 0.5rem 1.5rem;
+    padding: 1rem 1.3rem 1rem 1.5rem;
 }
 .nav-menu-container {
     display: flex;
@@ -47,7 +53,6 @@
     text-decoration: underline;
     transition: 0.15s ease-in-out;
     text-shadow: 0 0 0.3rem rgb(130, 130, 130);
-    
 }
 #logo {
     width: 25vw;
@@ -119,7 +124,7 @@ footer {
     text-align: center;
     margin: 2rem;
     font-size: 1.5rem;
-    color:rgb(210, 210, 210);
+    color:rgb(221, 221, 221);
     letter-spacing: 0.2rem;
     font-weight: 600;
 }
@@ -245,10 +250,9 @@ footer {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 15vh;
-    width: 750px;
-    
 }
 .card {
+    animation: slide 1.5s forwards;
     display: inline-block;
     position: relative;
     width: 300px;
@@ -260,7 +264,6 @@ footer {
     overflow: hidden;
     margin: 1rem;
     box-shadow: 1rem 1rem 6rem rgba(0, 0, 0, 0.477);
-    animation: fadein 0.5s ease-in-out forwards;
 }
 .card:nth-of-type(1) {
     background: url('../images/portfolio_concept.jpg') center no-repeat;
@@ -294,7 +297,6 @@ footer {
     background: url('../images/foodphoto.jpg') center no-repeat;
     background-size: cover;
 }
-
 .card-content {
     position: absolute;
     bottom: 0;
@@ -337,6 +339,9 @@ footer {
     html {
         font-size: 110%;
     }
+    .navbar-container {
+        padding: 1rem 2rem;
+    }
     .profile-container {
         padding: 2rem 2.5rem 1rem 2.5rem;
         box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.664);
@@ -368,12 +373,14 @@ footer {
     html {
         font-size: 115%;
     }
-
+    .navbar-container {
+        padding: 2rem 3rem;
+    }
     #greeting {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        margin-right: 20%;
+        margin-left: 20%;
     }
     #greeting div {
         margin-left: 2rem;
@@ -395,7 +402,6 @@ footer {
         flex-flow: row wrap;
         align-self: center;
         justify-content: center;
-        
     }
     .skills {
         display: flex;
