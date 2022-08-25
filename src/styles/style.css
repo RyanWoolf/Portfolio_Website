@@ -182,7 +182,7 @@ footer {
     max-width: 100px;
 }
 #minimumheightcontroller {
-    height: 75vh;
+    min-height: 72vh;
 }
 @keyframes slide {
     0% {
@@ -277,7 +277,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     
 }
 .skills div {
@@ -483,12 +483,13 @@ footer {
     font-family: 'Open Sans', sans-serif;
     color:rgba(0, 0, 0, 0.767);
     text-indent: 10px;
+    line-height: 15px;
 }
 .readmore {
     position: relative;
     margin-top: auto;
     bottom: 0;
-    height: 50px;
+    min-height: 40px;
     width: 100%;
     box-shadow: 0 -1rem 1rem -1rem rgb(85, 85, 85);
 }
@@ -560,78 +561,47 @@ footer {
         align-items: center;
     }
     footer {
-        position: sticky;
-        top: 100%;
+        position: fixed;
     }
-    #minimumheightcontroller {
-        min-height: 100vh;
+    .page-subtitle {
+        margin: 1rem;
     }
     .blogs-container {
-        display: block;
-        /* align-items: center; */
-        /* margin: auto; */
-        padding: 1rem;
-        width: 85vw;
-        height: 100%;
+        width: 93vw;
+        height: auto;
         max-height: none;
-        overflow: none;
-        overflow-x: none;
-        scroll-snap-type: none;
-        scroll-padding: none;
-        border-radius: 8px;
-        gap: 1rem;
-        font-size: 130%;
-    }
-    .blogs-contents {
-        flex: 0 0 auto;
-        margin: 10px;
-        height: 30vh;
-        background-color: rgb(255, 255, 255);
-        border-radius: 8px;
-        scroll-snap-align: none;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-        box-shadow: 1rem 1rem 6rem rgba(0, 0, 0, 0.539);
-    }
-    .post-photo {
-        border-radius: 8px 0px 0 8px;
-        width: 33vw;
-        height: 30vh;
-        margin-bottom: 0rem;
-    }
-    .post {
-        width: 300px;
-        padding-top: 2rem;
-        height: auto;
-        max-height: 32%;
-        overflow: visible;
-        line-height: 1rem;
-    }
-    .post-description {
-        width: 300px;
-        height: auto;
-        font-size: 0.75rem;
-        font-family: 'Open Sans', sans-serif;
-        color:rgba(0, 0, 0, 0.767);
-    }
-    .readmore {
-        position: relative;
-        margin-top: 0%;
-        height: 50px;
-        width: 300px;
-        box-shadow: 0 -1rem 1rem -1rem rgb(85, 85, 85);
-    }
-    #lastpost {
+        max-width: 750px;
         display: flex;
         justify-content: center;
+        flex-flow: row wrap;
+        margin-bottom: 15vh;
+    }
+    .post-photo {
+        width: 100%;
+    }
+    .blogs-contents {
+        flex: none;
+        width: calc(93vw/2 - 2rem);
+        height: 50vh;
+        max-width: 340px;
+        /* max-height: 60vh; */
+        font-size: 110%;
+    }
+    .post {
+        width: 90%;
+    }
+    .post-description {
+        width: 100%;
+    }
+    #minimumheightcontroller {
+        display: flex;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.094);
+    }
+    .readmore {
+        min-height: 50px;
     }
     #lastpost img {
         transform: rotate(90deg);
-        scale: 150%;
     }
 }
 /* desktop view */
@@ -735,9 +705,47 @@ footer {
         align-items: center;
     }
     footer {
-        position: absolute;
+        position: fixed;
+    }
+    .page-subtitle {
+        margin: 1rem;
+    }
+    .blogs-container {
+        width: 93vw;
+        height: auto;
+        max-width: 840px;
+        max-height: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-bottom: 15vh;
+        margin-top: 1rem;
+    }
+    .post-photo {
+        width: 100%;
     }
     .blogs-contents {
-        flex: 0 0 550px;
+        flex: none;
+        width: calc(93vw/2 - 2rem);
+        height: 50vh;
+        max-width: 250px;
+        max-height: 450px;
+        font-size: 120%;
+    }
+    .post {
+        width: 90%;
+    }
+    .post-description {
+        width: 100%;
+    }
+    #minimumheightcontroller {
+        display: flex;
+        align-items: center;
+    }
+    .readmore {
+        min-height: 50px;
+    }
+    #lastpost img {
+        transform: rotate(90deg);
     }
 }
