@@ -219,7 +219,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
 }
-#greeting {
+#greeting-container {
     animation: slide 1.5s forwards;
     padding-top: 31vh;
     align-items: center;
@@ -237,12 +237,12 @@ footer {
     font-weight: 600;
     color:#60a4f8;
 }
-#greeting h2 {
+#greeting-container h2 {
     margin-top: 2rem;
     color: rgb(210, 210, 210);
     font-weight: 500;
 }
-#greeting p {
+#greeting-container p {
     margin-top: 0.5rem;
     color:rgb(210, 210, 210);
     font-size: 1rem;
@@ -271,6 +271,7 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     line-height: 1.7rem;
+    font-weight: 300;
 }
 .skills {
     display: flex;
@@ -322,7 +323,6 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 1rem;
     margin-bottom: 10vh;
 }
 .card {
@@ -423,6 +423,7 @@ footer {
     border-radius: 8px;
     gap: 1rem;
     background:rgb(255, 255, 255);
+    animation: slide 1.5s forwards;
 }
 .blogs-contents {
     flex: 0 0 250px;
@@ -478,12 +479,12 @@ footer {
     overflow: hidden;
     line-height: 14px;
 }
-.post-description {
-    font-size: 0.75rem;
+.post .post-description {
+    font-size: 0.85rem;
     font-family: 'Open Sans', sans-serif;
     color:rgba(0, 0, 0, 0.767);
     text-indent: 10px;
-    line-height: 15px;
+    line-height: 145%;
 }
 .readmore {
     position: relative;
@@ -502,10 +503,69 @@ footer {
 #lastpost {
     background-color: rgba(255, 255, 255, 0.094);
 }
+.posting-container {
+    animation: slide 1.5s forwards;
+    margin: auto;
+    margin-bottom: 5vh;
+    padding: 1rem 2.2rem 2rem 2.2rem;
+    width: 97vw;
+    height: auto;
+    border-radius: 8px;
+    background:rgb(255, 255, 255);
+}
+.posting-photo-container {
+    width: 110%;
+    height: 25vh;
+    margin: 1rem 0rem;
+}
+.posting-container .post-description {
+    font-size : 0.8rem;
+    line-height: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.posting-photo1 {
+    background-image: url(../images/img_post1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.posting-photo2 {
+    background-image: url(../images/img_post2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.posting-photo3 {
+    background-image: url(../images/img_post3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.posting-photo4 {
+    background-image: url(../images/img_post4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.posting-photo5 {
+    background-image: url(../images/img_post5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.posting-photo6 {
+    background-image: url(../images/img_post6.png);
+    background-size: cover;
+    background-position: center;
+}
 /* tablet view */
 @media screen and (min-width: 500px) and (max-width: 899px) {
     html {
         font-size: 110%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        position: fixed;
     }
     .navbar-container {
         flex-direction: row;
@@ -535,6 +595,9 @@ footer {
     .navbar-container {
         padding: 1rem 2rem;
     }
+    .page-subtitle {
+        margin: 1rem;
+    }
     .profile-container {
         padding: 2rem 2.5rem 1rem 2.5rem;
         box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.664);
@@ -555,17 +618,6 @@ footer {
         height: 50%;
         transform: translateY(50px);
     }
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    footer {
-        position: fixed;
-    }
-    .page-subtitle {
-        margin: 1rem;
-    }
     .blogs-container {
         width: 93vw;
         height: auto;
@@ -585,13 +637,15 @@ footer {
         height: 50vh;
         max-width: 340px;
         /* max-height: 60vh; */
-        font-size: 110%;
+        /* font-size: 110%; */
     }
     .post {
         width: 90%;
+        line-height: 16px;
     }
-    .post-description {
+    .post .post-description {
         width: 100%;
+        font-size: 0.7rem;
     }
     #minimumheightcontroller {
         display: flex;
@@ -603,11 +657,33 @@ footer {
     #lastpost img {
         transform: rotate(90deg);
     }
+    .posting-container {
+        margin-bottom: 15vh;
+        padding: 1rem 2.2rem 2rem 2.2rem;
+        width: 93vw;
+    }
+    .posting-photo-container {
+        width: 100%;
+        height: 30vh;
+        min-height: 300px;
+        margin: 1rem 0rem;
+    }
+    .posting-container .post-description {
+        line-height: 1.5rem;
+    }
 }
 /* desktop view */
 @media screen and (min-width: 900px) {
     html {
         font-size: 115%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        position: fixed;
     }
     .navbar-container {
         flex-direction: row;
@@ -637,7 +713,7 @@ footer {
     .navbar-container {
         padding: 1rem 2rem;
     }
-    #greeting {
+    #greeting-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -646,7 +722,7 @@ footer {
         padding-top: 0;
         height: 100vh;
     }
-    #greeting div {
+    #greeting-container div {
         margin-left: 2rem;
     }
     .profile-container {
@@ -689,6 +765,7 @@ footer {
     }
     .cards-container {
         width: 900px;
+        margin-top: 1rem;
     }
     .card {
         width: 280px;
@@ -698,14 +775,6 @@ footer {
     .card-content {
         height: 43%;
         transform: translateY(50px);
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    footer {
-        position: fixed;
     }
     .page-subtitle {
         margin: 1rem;
@@ -734,9 +803,14 @@ footer {
     }
     .post {
         width: 90%;
+        line-height: 20px;
     }
-    .post-description {
+    .post .card-title {
+        font-size: 0.9rem;
+    }
+    .post .post-description {
         width: 100%;
+        font-size: 0.7rem;
     }
     #minimumheightcontroller {
         display: flex;
@@ -747,5 +821,21 @@ footer {
     }
     #lastpost img {
         transform: rotate(90deg);
+    }
+    .posting-container {
+        margin-top: 1rem;
+        margin-bottom: 15vh;
+        padding: 3rem;
+    
+        max-width: 840px;
+    }
+    .posting-photo-container {
+        width: 100%;
+        height: 30vh;
+        min-height: 350px;
+        margin: 1rem 0rem;
+    }
+    .posting-container .post-description {
+        line-height: 1.5rem;
     }
 }
