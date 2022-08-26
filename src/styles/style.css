@@ -629,8 +629,6 @@ a:visited {
         width: calc(93vw/2 - 2rem);
         height: 50vh;
         max-width: 340px;
-        /* max-height: 60vh; */
-        /* font-size: 110%; */
     }
     .post {
         width: 90%;
