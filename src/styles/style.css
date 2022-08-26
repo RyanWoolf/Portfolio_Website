@@ -1,11 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway|Roboto|Open+Sans');
-/* global values */
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     scroll-behavior: smooth;
 }
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, #505050, #292929);
+}
+footer {
+    height: 17vw;
+    max-height: 80px;
+    color:rgb(210, 210, 210);
+    font-size: 0.6rem;
+    background-color: #3a3a3a;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 0 1rem 0;
+    box-shadow: 0rem -0.5rem 2rem rgb(49, 49, 49);
+}
+.footer-container {
+    padding: 0 5vw;
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container .social-icons img {
+    width: 5vw;
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0 0.5rem;
+}
+/* Properties will be used often */
 .flex-col-center {
     display: flex;
     flex-direction: column;
@@ -17,8 +47,35 @@
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 499px) {
+.page-subtitle {
+    text-align: center;
+    margin: 1rem 0.5rem 1.5rem 0.5rem;
+    font-size: 1.2rem;
+    color:rgb(221, 221, 221);
+    letter-spacing: 0.2rem;
+    font-weight: 600;
 }
+.article-title {
+    color:rgb(210, 210, 210);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+a:link {
+    color:rgb(210, 210, 210);
+}
+a:visited {
+    color: rgb(210, 210, 210);
+}
+.button {
+    text-decoration: none;
+    margin: 2rem;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid rgb(210, 210, 210);
+    text-align: center;
+}
+/* Hamburger menu setup */
 .header {
     display: block;
 }
@@ -124,62 +181,15 @@
 } 
 .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
-} 
+}
 #logo {
     width: 25vw;
     max-width: 170px;
-}
-a:link {
-    color:rgb(210, 210, 210);
-}
-a:visited {
-    color: rgb(210, 210, 210);
-}
-.button {
-    text-decoration: none;
-    margin: 2rem;
-    padding: 0.7rem 1rem;
-    border: 1.5px solid rgb(210, 210, 210);
-    text-align: center;
 }
 .button:hover {
     transition: 0.2s ease-in-out;
     border: 1.5px solid #b6a256;
     background-color: #b6a256;
-}
-body {
-    background-attachment: fixed;
-    background-image: linear-gradient(to bottom right, #505050, #292929);
-}
-footer {
-    height: 17vw;
-    max-height: 80px;
-    color:rgb(210, 210, 210);
-    font-size: 0.6rem;
-    background-color: #3a3a3a;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 1.5rem 0 1rem 0;
-    box-shadow: 0rem -0.5rem 2rem rgb(49, 49, 49);
-}
-.footer-container {
-    padding: 0 5vw;
-    margin-bottom: 0.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-icons img {
-    width: 5vw;
-    max-width: 25px;
-    max-height: 25px;
-    margin: 0 0.5rem;
-}
-#footerlogo {
-    width: 15vw;
-    max-width: 100px;
 }
 #minimumheightcontroller {
     min-height: 72vh;
@@ -194,24 +204,8 @@ footer {
         opacity: 1;
     }
 }
-.page-subtitle {
-    text-align: center;
-    margin: 1rem 0.5rem 1.5rem 0.5rem;
-    font-size: 1.2rem;
-    color:rgb(221, 221, 221);
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-}
-.article-title {
-    color:rgb(210, 210, 210);
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
-}
 /* mobile view */
 /* landing page */
-
 #landing {
     background: url(../images/background1.jpg);
     min-height: 100vh;
@@ -233,14 +227,14 @@ footer {
     max-width: 250px;
     background-color: black;
 }
-.highlight {
-    font-weight: 600;
-    color:#60a4f8;
-}
 #greeting-container h2 {
     margin-top: 2rem;
     color: rgb(210, 210, 210);
     font-weight: 500;
+}
+#greeting-container span {
+    font-weight: 600;
+    color:#60a4f8;
 }
 #greeting-container p {
     margin-top: 0.5rem;
@@ -279,7 +273,6 @@ footer {
     align-items: center;
     flex-flow: row wrap;
     margin-bottom: 10vh;
-    
 }
 .skills div {
     width: calc(85vw/2 - 1rem);
@@ -405,7 +398,7 @@ footer {
     transform: translateY(0);
 }
 .card:hover .card-description {
-    opacity:1 ;
+    opacity: 1;
     transition-delay: .25s;
 }
 /* newsroom page */
