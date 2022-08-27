@@ -29,14 +29,14 @@ The website is built with full of semantics, responsive layout for devices with 
 
 
 
-![About layout](docs/layout_about.png "Aout Layout")
+![About layout](docs/layout_about.png "About Layout")
 ![About page](docs/About.jpg "About Page")
 
 - About page : This page is filled with my actual profile photo, What i do, my history, Resume and my interest. The profile photo is coded to be placed under the profile content which has shadow property so it seems like it's acutually under the text content card. The photo and profile will flexibly move according to the size of screen. and at the bottom, it has 'my interest' box which have colours so they can have a bit of attention.
 
 
 
-![Projects layout](docs/projects_layout.png "Projects Layout")
+![Projects layout](docs/layout_projects.png "Projects Layout")
 ![Projects page](docs/Projects.jpg "Projects Page")
 
 - Projects page : As i'm a IT student yet, i don't have actual experience on development. So I made a card gallery used on flexbox about my previous works with photos and short descriptions. The cards has hidden layer for texts, when the mouse cursor is hovering, the hidden part will come halfway up. When the cursor is out, it goes back.
