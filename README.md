@@ -27,8 +27,10 @@ The website is built with full of semantics, responsive layout for devices with 
 - Projects page : As i'm a IT student yet, i don't have actual experience on development. So I made a card gallery used on flexbox about my previous works with photos and short descriptions. The cards has hidden layer for texts, when the mouse cursor is hovering, the hidden part will come halfway up. When the cursor is out, it goes back.
 
 
-- Newsroom page : This is the blog page. When 'Projects' page is consist of vertical gallery style, 'Newsroom' page is made on horizontal scroll snapping gallery. I didn't add hidden layers to show descriptions but linked to separate posing pages.
+- Newsroom page : This is the blog page. When 'Projects' page is consist of vertical gallery style, 'Newsroom' page is made on horizontal scroll snapping gallery. I didn't add hidden layers to show descriptions but linked to separate posing pages instead.
 
+
+- Newsroom post page : This page has similar layout as Newsroom blog cards but has full content of the post. It 
 
 - Etc. : Only with CSS, I have built the hamburgermenu for mobile vew only. Make 3 horizontal lines with tiny divs then make hovering menu hidden out of the screen with input type 'Checkbox' for conditional sliding down menu. Unfortunately it wasn't my original idea but it took a while to understand the mechanism and how to implement it on my website. But on 
 

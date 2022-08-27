@@ -665,6 +665,9 @@ a:visited {
         min-height: 300px;
         margin: 1rem 0rem;
     }
+    .posting-container .card-title {
+        font-size: 1.3rem;
+    }
     .posting-container .post-description {
         line-height: 1.5rem;
         font-size : 0.7rem;
@@ -834,6 +837,9 @@ a:visited {
         height: 30vh;
         min-height: 350px;
         margin: 1rem 0rem;
+    }
+    .posting-container .card-title {
+        font-size: 1.4rem;
     }
     .posting-container .post-description {
         line-height: 1.5rem;
