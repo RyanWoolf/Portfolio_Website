@@ -3,6 +3,8 @@
 
 ## [Portfolio Website](http://lionwolfhaus.netlify.app)
 
+## [Video Presentation](https://vimeo.com/manage/videos/743882385)
+
 ## [GitHub Repo](https://github.com/RyanWoolf/ChanghaLee_T1A2)
 
 
