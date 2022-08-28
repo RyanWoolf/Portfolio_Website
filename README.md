@@ -43,7 +43,7 @@ The website is built with full of semantics, responsive layout for devices with 
 
 
 
-![Newsroom layout](docs/layout_newsroom.png "Newsroom Layout")
+![Newsroom layout](docs/layout_blogs.png "Newsroom Layout")
 ![Newsroom page](docs/Newsroom_gallery.jpg "Newsroom Page")
 
 - Newsroom page : This is the blog page. When 'Projects' page is consist of vertical gallery style, 'Newsroom' page is made on horizontal scroll snapping gallery. I didn't add hidden layers to show descriptions but linked to separate posing pages instead.
@@ -70,5 +70,6 @@ Created by Figma.
 - Wireframes : Figma
 - Layout, Screenchots : Adobe XD
 - Image editing : Adobe Photoshop, Adobe Illustrator
+- Mock-up images : Figma
 - Website : VS code
 - Deployment : Netlify
