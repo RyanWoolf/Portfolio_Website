@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="icon" href="images/favicon.png">
-    <title>LionWolf haus</title>
-</head>
-<body>
-    <main id="landing">
-        <section id="greeting-container" class="flex-col-center">
-            <div id="alert">
-                <h1>This website is deprecated.</h1>
-                <p>Please visit new <a href="http://www.lionwolfhaus.com" target="_blank">Portfolio website</a></p>
-                
-            </div>
-            <img id="profilememoji" src="./images/ryan_laptop.png" alt="profile memoji">
-            <div class="flex-col-center-center"><h2>Hello. I'm <span>Ryan Lee.</span></h2>
-            <p>and this is what I do.</p>
-            <a class="button" href="./pages/projects.html">View my work</a></div>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="icon" href="images/favicon.png">
+        <title>LionWolf haus</title>
+
+    </head>
+    <body>
+        <main id="landing">
+            <section id="greeting-container" class="flex-col-center">
+                <img id="profilememoji" src="./images/ryan_laptop.png" alt="profile memoji">
+                <div class="flex-col-center-center"><h2>Hello. I'm <span>Ryan Lee.</span></h2>
+                <p>and this is what I do.</p>
+                <a class="button" href="./pages/projects.html">View my work</a></div>
+            </section>
+        </main>
+    </body>    
+    <script>
+        const select = confirm('This website is deprecated. Click OK to redirect to New Portfolio Website.')
+        if (select) {
+            window.location.href = 'http://www.lionwolfhaus.com/'
+        } 
+    </script>
 </html>
