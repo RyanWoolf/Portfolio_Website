@@ -848,3 +848,23 @@ a:visited {
         padding-right: 2rem;
     }
 }
+
+#alert {
+    position:absolute;
+
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background-color: #e12727c3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fffcf5;
+}
+
+#alert h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
