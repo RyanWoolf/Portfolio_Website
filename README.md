@@ -1,4 +1,9 @@
-# T1A2 Portfolit Website project by Chang-Ha Lee
+# T1A2 Portfolio Website project by Chang-Ha Lee
+
+# **This website is deprecated. <br>Please visit the new portfolio website.**
+## [New Portfolio Website](http://www.lionwolfhaus.com)
+
+---
 
 
 ## [Portfolio Website](http://lionwolfhaus.netlify.app)
